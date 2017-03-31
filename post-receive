@@ -1,0 +1,12 @@
+#!/bin/sh
+
+unset GIT_DIR
+
+NowPath=`pwd`
+DeployPath="../../git-server-hooks"
+
+cd $DeployPath
+git pull origin master
+
+cd $NowPath
+exit 0
